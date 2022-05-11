@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Jokes Generator</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: "Arial";
+        }
+
+        .jokeBody {
+            background-color: lightgray;
+            margin: 200px;
+            padding: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; padding: 30px; color: cadetblue;">Chuck Norris Jokes Generator</h1>
+    <div class="jokeBody">
+        <h2 th:text="${joke}"> Ahah! </h2>
+    </div>
+
+</body>
+</html>
